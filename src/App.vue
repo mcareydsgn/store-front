@@ -102,7 +102,7 @@ export default {
   },
   created(){
 
-      fetch('https://fakestoreapi.com/products')
+      fetch('https://demo34107.appliances.dev.rwsgateway.com/FRONT-END-DEV-PRODUCT-TEST?test_api_key=DBWOSJJBZCQSIJMYKNGEYSRTPFIAVOPVBVGUSUJPFRSHKGWVWB')
             .then(res=>res.json())
             .then(json=> {
 
@@ -119,9 +119,13 @@ export default {
 
 
             }).catch(err=>{
-              console.error(err)
+                console.log(err)
             });
   }
+
+
+
+
 
 }
 </script>
