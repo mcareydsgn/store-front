@@ -102,10 +102,10 @@ export default {
   },
   created(){
 
-      fetch('https://demo34107.appliances.dev.rwsgateway.com/FRONT-END-DEV-PRODUCT-TEST?test_api_key=DBWOSJJBZCQSIJMYKNGEYSRTPFIAVOPVBVGUSUJPFRSHKGWVWB')
+      fetch('https://fakestoreapi.com/products')
             .then(res=>res.json())
             .then(json=> {
-
+              console.log(JSON)
               this.products = json;
 
               this.category_list = this.products.map(product => {
